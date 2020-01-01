@@ -15,5 +15,6 @@ func TestTwoSum(t *testing.T) {
 	t.Log(ret)
 	ret = twoSum2(nums, target)
 	t.Log(ret)
+	t.Log(twoSum3(nums, target))
 
 }

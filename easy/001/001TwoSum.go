@@ -32,3 +32,22 @@ func twoSum2(nums []int, target int) []int {
 	}
 	return ret
 }
+
+func twoSum3(nums []int, targer int) []int {
+	ret := make([]int, 0, 2)
+	i, j := 0, len(nums)-1
+	for i <= j {
+		sum := nums[i] + nums[j]
+		if sum < targer {
+			i++
+		} else if sum > targer {
+			j--
+		} else {
+			ret = append(ret, i, j)
+			return ret
+		}
+
+	}
+	return ret
+
+}
